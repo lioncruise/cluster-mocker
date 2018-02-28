@@ -5,6 +5,10 @@ import org.lioncruise.clustermocker.entities.Cluster;
 import org.lioncruise.clustermocker.entities.Machine;
 import org.lioncruise.clustermocker.entities.Pod;
 
+/**
+ * @Author Shijun Qin qinshijun2016@otcaix.iscas.ac.cn
+ * @Date 2018/2/28 18:53
+ */
 public class DefaultScheduling {
     public static void schedule(Cluster cluster, List<Pod> podList) {
         for (Pod pod : podList) {
