@@ -46,7 +46,7 @@ public class Cluster {
         }
     }
 
-    public Cluster(int n, int cpu, int mem) {
+    public Cluster(int n, int cpu, double mem) {
         this.initCapacity = n;
         this.currCapacity = n;
 

@@ -55,7 +55,7 @@ public class Machine {
         seq++;
     }
 
-    public Machine(int cpuMax, int memMax) {
+    public Machine(int cpuMax, double memMax) {
         this.cpuMax = cpuMax;
         this.memMax = memMax;
         seq++;

@@ -15,7 +15,7 @@ public class Main {
     public static void main(String[] args) {
         List<Pod> podList = CSVOperation.readInfo();
 
-        Cluster cluster = new Cluster(1300, 64, 1);
+        Cluster cluster = new Cluster(1300, 64, 1.0);
         DefaultScheduling.schedule(cluster, podList);
 
         CSVOperation.writeInfo(cluster, podList);
