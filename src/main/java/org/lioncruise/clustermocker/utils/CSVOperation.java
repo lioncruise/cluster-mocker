@@ -7,6 +7,10 @@ import java.io.*;
 import java.util.*;
 import org.lioncruise.clustermocker.entities.*;
 
+/**
+ * @Author Shijun Qin qinshijun16@otcaix.iscas.ac.cn
+ * @Date 2018/4/4 17:11
+ */
 public class CSVOperation {
     public static List<Pod> readInfo() {
         String filePath = "E:\\Alibaba-clusterdata\\container_event.csv";

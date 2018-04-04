@@ -1,7 +1,7 @@
 package org.lioncruise.clustermocker.entities;
 
 /**
- * @Author Shijun Qin qinshijun2016@otcaix.iscas.ac.cn
+ * @Author Shijun Qin qinshijun16@otcaix.iscas.ac.cn
  * @Date 2018/2/28 18:36
  */
 public class Machine {
