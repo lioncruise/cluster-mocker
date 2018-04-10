@@ -10,6 +10,7 @@ public class Pod {
     private double memRequest;
     private boolean isScheduled = false;
     private int machineId = 0;
+    private int deploymentId = 0;
 
     public void setId(int id) {
         this.id = id;
@@ -46,6 +47,14 @@ public class Pod {
 
     public int getMachineId() {
         return machineId;
+    }
+
+    public int getDeploymentId() {
+        return deploymentId;
+    }
+
+    public void setDeploymentId(int deploymentId) {
+        this.deploymentId = deploymentId;
     }
 
     public Pod(int cpuRequest, double memRequest) {
