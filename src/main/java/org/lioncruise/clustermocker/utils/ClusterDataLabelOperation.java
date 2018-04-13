@@ -69,11 +69,15 @@ public class ClusterDataLabelOperation {
                     withCommand("sleep", "3600").withImagePullPolicy("IfNotPresent").
                     withName("test-" + pod.getDeploymentId() + "-" + pod.getId()).build();
 
+            Map<String, String> podLabelMap = new HashMap<String, String>();
+            podLabelMap.put("podType", "A");
+
             io.fabric8.kubernetes.api.model.Pod pod1 = new PodBuilder().
                     withApiVersion("v1").
                     withNewMetadata().
                     withName("test-" + pod.getDeploymentId() + "-" + pod.getId()).
                     withNamespace("default").
+                    withLabels(podLabelMap).
                     endMetadata().
                     withNewSpec().
                     withContainers(container).
